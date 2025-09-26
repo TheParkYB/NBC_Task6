@@ -5,7 +5,7 @@ ATrollFloor::ATrollFloor()
 {
 	PrimaryActorTick.bCanEverTick = false;
 
-	//축이될 컴포넌트를 우선 축사
+	//축이될 컴포넌트를 우선 추가
 	USceneComponent* axis = CreateDefaultSubobject< USceneComponent>(TEXT("Axis"));
 	axis->SetupAttachment(GetRootComponent());
 
